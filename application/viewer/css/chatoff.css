@@ -1,0 +1,195 @@
+html, body
+{
+	width:100%;
+	height:100%;
+	overflow:auto;
+	margin: 0px;
+	padding:0px;
+	font-family: 'Iceland', cursive;
+}
+ 
+form
+{
+	margin:0;
+	padding:0;
+}
+
+.msgln_light
+{
+	background-color:#F2F2F5;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.msgln_dark
+{
+	background-color:#BBD2E0;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.bbcode_button
+{
+	width:20px;
+	height:20px;
+	background-color:#F2F2F5;
+	border:1px solid #003250;
+	display:inline-block
+}
+ 
+.d_table
+{
+	display:table;
+	width:100%;
+	height:100%;
+}
+
+.d_cell
+{
+	display:table-cell;
+	width:100%;
+	height:100%;
+    text-align: center;
+    vertical-align: middle	
+} 
+ 
+.error
+{
+	color: #ff0000;
+} 
+ 
+#wrapper
+{
+	top:0px;
+	left:0px;
+	min-height:300px;
+	min-width:512px;
+	overflow:auto;
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color:#787878;
+}
+ 
+#chatbox_wrapper
+{
+	position:absolute;
+	left:30px;
+	right:30px;
+	top:74px;
+	bottom: 74px;
+	background-color:#A7A7A7;
+	border:1px solid #003250;	
+}
+
+#chatbox
+{
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	overflow:auto;
+}
+
+#input
+{
+	display:block;
+	position:absolute;
+	left:5px;
+	right:5px;
+	height:75px;
+	bottom:0px;
+}
+
+#input_inner
+{
+	display:block;
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	background-color:#5893AC;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+ 	border: 1px solid #003250;	
+}
+
+#user_name
+{
+    text-align: left;
+	padding-left:25px;
+}
+
+.input_text, .input_tag
+{
+	width:400px;
+	border:1px solid #003250;
+}
+ 
+.input_tag
+{
+	width:100px;
+} 
+ 
+ 
+#submit
+{
+	width: 60px;
+}
+  
+#menu
+{
+	position:absolute;
+	left:5px;
+	right:5px;
+	height:75px;
+	top:0px;
+}
+
+#menu_inner
+{
+	position:absolute;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	top:0px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	font-size:24px;
+	color:white;
+	background-color:#5893AC;	
+	border: 1px solid #003250;	
+}
+
+button.cupid-blue
+{
+	background-color: #F2F2F5;
+	border: 1px solid#003250;
+	border-radius: 12px;
+	-webkit-box-shadow: inset 0 1px 0 0 white;
+	box-shadow: inset 0 1px 0 0 white;
+	color: #1a3e66;
+	padding: 2px 0 2px 0;
+	text-align: center;
+	text-shadow: 0 1px 1px #fff;
+	width: 150px;
+}
+
+button.cupid-blue:hover
+{
+	background-color: #BBD2E0;
+	border: 1px solid#003250;
+	-webkit-box-shadow: inset 0 1px 0 0 #f2f2f2;
+	box-shadow: inset 0 1px 0 0 #f2f2f2;
+	color: #163659;
+	cursor: pointer;
+}
+
+button.cupid-blue:active
+{
+	border: 1px solid#003250;
+	-webkit-box-shadow: inset 0 0 4px 2px #5893AC, 0 0 1px 0 #5893AC;
+	box-shadow: inset 0 0 4px 2px #5893AC, 0 0 1px 0 #5893AC;
+}
