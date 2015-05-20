@@ -21,10 +21,9 @@
 		<meta name="robots" content="index,follow" />	
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>		
 		<script type="text/javascript">
-			/*
-			** utilizzare JQuery 1.7 o superiore in quanto è stata usata la funzione .on() invece di .delegate() o .live() nel javascript per adeguarsi alla nuova versione della libreria.
-			** Per utilizzare versioni precedenti della libreria consultare la pagina http://api.jquery.com/live/ per le sintassi per le varie versioni.
-			*/
+			//utilizzare JQuery 1.7 o superiore in quanto è stata usata la funzione .on() invece di .delegate() o .live() nel javascript per adeguarsi alla nuova versione della libreria.
+			//Per utilizzare versioni precedenti della libreria consultare la pagina http://api.jquery.com/live/ per le sintassi per le varie versioni.
+
 			var lines = 0;
 			//Oggetto con le opzioni per lo script della chat
 			var chatOptions = {
@@ -78,7 +77,7 @@
 								<input name="usertag" type="text" class="input_tag" />								
 								<input name="usermsg" type="text" class="input_text" id="usermsg" />
 								<input name="op" type="hidden" id="op" value="invia" />
-								<button name="submitmsg" id="submitmsg" class="cupid-blue">Invia</button>
+								<button name="submitmsg" id="submitmsg" class="custom">Invia</button>
 							</form>
 						</div>
 					</div>

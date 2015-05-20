@@ -1,4 +1,6 @@
-$(document).ready(function(){			
+/// @cond
+$(document).ready(function(){
+/// @endcond
 	//Recupera il template per i messaggi della chat
 	var chat_template = $('#chat_template').html();
 	//Rimuove il template della pagina web per maggiore ordine
@@ -6,7 +8,7 @@ $(document).ready(function(){
 	var full_refresh = 0;	
 	var real_lines = 0;	
 
-
+	
 	$("#submitmsg").click(function(){	
 		//recupero del contenuto dell'input di testo della chat
 		var post_data = $(this).parent().serialize();
@@ -19,14 +21,16 @@ $(document).ready(function(){
 		return false;
 	});
 
-//FUNZIONE PER NASCONDERE UN MESSAGGIO DELLA CHAT	
+
+	
 	$(document).on("click", ".hide", function(event){  
 		event.preventDefault();
 		var post_data = $(this).parent().serialize();
 		$.post("post.php", post_data);
+		full_refresh = 1;
+		setTimeout(function(){$.XMLChat();},250);		
 	});
-	
-//FUNZIONE DI REFRESH DELLA CHAT 
+
 	$.XMLChat = function() {
 		//Recupera l'altezza del div contenente la chat prima del nuovo refresh
 		var oldscrollHeight = $('#chatbox')[0].scrollHeight - 20;
@@ -128,8 +132,10 @@ $(document).ready(function(){
 			}
 		});
 	}
+
 	//esegue il refresh della chat al primoingresso della chat
 	$.XMLChat()
 	//imposta l'aggiornamento ciclico della chat
 	setInterval (function(){$.XMLChat()}, chatOptions.refreshInterval);	//Reload file every 2.5 seconds
+
 });

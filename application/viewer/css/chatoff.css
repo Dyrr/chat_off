@@ -14,18 +14,37 @@ form
 	padding:0;
 }
 
+
+/* contenitore e sfondo della pagina */
+#wrapper
+{
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	position:absolute;
+	background: repeating-linear-gradient(
+		45deg,
+		#FFFFFF,
+		#FFFFFF 4px,
+		#D7D7D7 4px,
+		#D7D7D7 5px
+	);	
+}
+
+
 .msgln_light
 {
-	background-color:#F2F2F5;
-	padding-top:10px;
-	padding-bottom:10px;
+	background-color:#C9C9C9;
+	padding-top:5px;
+	padding-bottom:5px;
 }
 
 .msgln_dark
 {
-	background-color:#BBD2E0;
-	padding-top:10px;
-	padding-bottom:10px;
+	background-color:#B9B9B9;
+	padding-top:5px;
+	padding-bottom:5px;
 }
 
 .bbcode_button
@@ -58,30 +77,22 @@ form
 	color: #ff0000;
 } 
  
-#wrapper
-{
-	top:0px;
-	left:0px;
-	min-height:300px;
-	min-width:512px;
-	overflow:auto;
-	position:absolute;
-	height:100%;
-	width:100%;
-	background-color:#787878;
-}
- 
+
+/* contenitore della chat */ 
 #chatbox_wrapper
 {
 	position:absolute;
 	left:30px;
 	right:30px;
-	top:74px;
-	bottom: 74px;
-	background-color:#A7A7A7;
-	border:1px solid #003250;	
+	top:50px;
+	bottom: 75px;
+	background-color:#FFFFFF;
+	border-left:1px solid #636363;
+	border-right:1px solid #636363;
+	
 }
 
+/* div della chat */
 #chatbox
 {
 	position:absolute;
@@ -110,10 +121,10 @@ form
 	right:0px;
 	top:0px;
 	bottom:0px;
-	background-color:#5893AC;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
- 	border: 1px solid #003250;	
+	background: linear-gradient(to bottom,  #ebebeb 0%,#838383 100%); /* W3C */	
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border:1px solid #636363;	
 }
 
 #user_name
@@ -125,29 +136,30 @@ form
 .input_text, .input_tag
 {
 	width:400px;
-	border:1px solid #003250;
+	border:1px solid #636363;
 }
  
 .input_tag
 {
 	width:100px;
 } 
- 
- 
+  
 #submit
 {
 	width: 60px;
 }
-  
+
+/* contenitore del div in alto con il nome del pg */  
 #menu
 {
 	position:absolute;
 	left:5px;
 	right:5px;
-	height:75px;
+	height:50px;
 	top:0px;
 }
 
+/* in alto con il nome del pg */  
 #menu_inner
 {
 	position:absolute;
@@ -155,41 +167,35 @@ form
 	right:0px;
 	bottom:0px;
 	top:0px;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	font-size:24px;
-	color:white;
-	background-color:#5893AC;	
-	border: 1px solid #003250;	
+	color:#000000;
+	background: linear-gradient(to bottom,  #ebebeb 0%,#838383 100%); /* W3C */	
+	border:1px solid #636363;	
 }
 
-button.cupid-blue
+button.custom
 {
 	background-color: #F2F2F5;
-	border: 1px solid#003250;
+	border:1px solid #636363;
 	border-radius: 12px;
-	-webkit-box-shadow: inset 0 1px 0 0 white;
-	box-shadow: inset 0 1px 0 0 white;
 	color: #1a3e66;
-	padding: 2px 0 2px 0;
+	padding: 2px 20px 2px 20px;
 	text-align: center;
 	text-shadow: 0 1px 1px #fff;
-	width: 150px;
+
 }
 
-button.cupid-blue:hover
+button.custom:hover
 {
 	background-color: #BBD2E0;
-	border: 1px solid#003250;
-	-webkit-box-shadow: inset 0 1px 0 0 #f2f2f2;
-	box-shadow: inset 0 1px 0 0 #f2f2f2;
+	border: 1px solid #003250;
 	color: #163659;
 	cursor: pointer;
 }
 
-button.cupid-blue:active
+button.custom:active
 {
-	border: 1px solid#003250;
-	-webkit-box-shadow: inset 0 0 4px 2px #5893AC, 0 0 1px 0 #5893AC;
-	box-shadow: inset 0 0 4px 2px #5893AC, 0 0 1px 0 #5893AC;
+	border: 1px solid #003250;
 }
