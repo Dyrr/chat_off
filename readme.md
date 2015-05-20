@@ -22,7 +22,7 @@ chat_off
 │   chatoff.php
 │   post.php
 │   readme.md
-│   select_os.php
+│   config.inc.php
 │   
 ├───application
 │   ├───controller
@@ -32,7 +32,7 @@ chat_off
 │   │               
 │   └───viewer
 │       ├───css
-│       │       chatoff.css
+│       │   	chatoff.css
 │       │       
 │       ├───img
 │       │       bbcode.png
@@ -44,8 +44,9 @@ chat_off
 │       │       
 │       └───template
 ├───documentation
-│   └───html
-│       └───search
+│   └───doxygen
+│   	└───html
+│       	└───search
 └───log
 ```
 
