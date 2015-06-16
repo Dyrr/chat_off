@@ -51,3 +51,4 @@ chat_off
 ```
 
 La cartella documentation contiene solamente la documentazione generata dai commenti al codice e può essere eliminata in qualsiasi momento senza compromettere il funzionamento del pacchetto.
+TEST....
